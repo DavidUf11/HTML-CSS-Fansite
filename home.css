@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: grid;
+    height: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+
+.home-container {
+    display: flex;
+    background-image: url("../images/bg-images/blue-8.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 81rem;
+    
+}
+
+#welcome {
+    justify-self: center;
+}
+
+/* #background {
+    position: relative;
+    z-index: -2;
+    width: 100%;
+    margin-bottom: 10rem;
+} */
+
+
+
+.badge {
+    z-index: 1;
+    height: 12rem;
+    width: 12rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+}
+ 
+.home-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 16rem;
+    left: 10rem;
+    align-items: center;
+    border: 2px solid red;
+
+
+}
+
+.home-items h1 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    font-family: Bebas Neue, Georgia, serif;
+    letter-spacing: .1rem;
+}
+
+
+.home-items h2 {
+    font-size: 2rem;
+    font-family: Signika, sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 3rem;
+}
+
+nav {  
+    display: flex;
+    margin-top: 1.75rem;
+}
+
+
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+}
+
+
+nav ul li {
+    font-family: Signika, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+    transition: color 375ms ease-out 0ms;
+    z-index: 2;
+}
+
+nav ul li a {
+    color: hsl(219, 100%, 34%);
+    transition: color 375ms ease-out 0ms;
+}
+
+nav ul li a:hover {
+    color: blue;
+    transition: color 375ms ease-out 0ms;
+} 
+
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+
+
+#drogba {
+    animation: drogbaFadeIn 1500ms linear 700ms;
+    animation-timing-function: ease-in; 
+    animation-fill-mode: backwards;
+    height: 81%;
+    z-index: 1;
+    position: absolute;
+    right: 14rem;
+    bottom: 10rem;  
+}
+
+
+
+@keyframes drogbaFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        
+    }
+}
+
+
+#meet-the-players {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    background-image: url('../images/bg-images/blue-vertical.svg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+
+.all-players-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all-players-container h2 {
+    align-self: center;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+
+h3 {
+    font-family: Signika, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-top: 1.8rem; 
+}
+
+.position-container {
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    background: linear-gradient(320deg, rgba(113,113,247,.3) 0%, rgba(214,242,255,.3) 50%);    border: 1px solid black;
+    border-radius: 40px;
+    box-shadow: 6px 6px 12px #3a3a3a;
+    border: 1px solid black;
+}
+
+
+.individual-player-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;   
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10px 0px 10px; 
+    min-width: 18rem;
+}
+
+
+.player {
+    -webkit-filter: drop-shadow(0px 0px 3px #888888);    
+    transition: -webkit-filter 400ms ease-in-out 0ms, left 150ms ease-in 0ms, bottom 150ms ease-in 0ms;
+    position: relative;
+    bottom: 0;
+    left: 0;   
+    border-radius: 10px;
+    margin: 0;  
+}
+
+.player:hover {
+    -webkit-filter: drop-shadow(-7px 7px 4px #888888) brightness(107%);
+    bottom: .1rem;
+    left: .1rem;
+}
+
+
+.name {
+    z-index: 2;
+    font-size: 32px;
+    font-family: 'Signika', sans-serif; 
+    font-weight: 500;
+    text-align: center;
+    width: 100%;   
+    position: relative; 
+    margin: 10px 0 20px 0;
+}
+
+.scroll-button {
+    color: hsl(219, 100%, 34%);
+    transition: color 375ms ease-out 0ms;
+    font-family: Signika, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    position: absolute;
+    bottom: 4rem;
+    right: 6rem;
+}
+
+.scroll-button:hover {
+    color: blue;
+    transition: color 375ms ease-out 0ms;
+}
