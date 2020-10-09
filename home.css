@@ -128,9 +128,9 @@ a:link, a:visited {
 
 
 #drogba {
-    animation: drogbaFadeIn 1500ms linear 700ms;
+/*     animation: drogbaFadeIn 1500ms linear 700ms;
     animation-timing-function: ease-in; 
-    animation-fill-mode: backwards;
+    animation-fill-mode: backwards; */
     height: 81%;
     z-index: 1;
     position: absolute;
@@ -140,7 +140,7 @@ a:link, a:visited {
 
 
 
-@keyframes drogbaFadeIn {
+/* @keyframes drogbaFadeIn {
     from {
         opacity: 0;
     }
@@ -149,7 +149,7 @@ a:link, a:visited {
         opacity: 1;
         
     }
-}
+} */
 
 
 #meet-the-players {
