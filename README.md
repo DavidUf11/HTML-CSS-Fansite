@@ -1,2 +1,2 @@
-# HTML-CSS-Fansite
-Wyncode Week 1 HTML/CSS Fan Site
+# Chelsea FC Fansite made with HTML & CSS
+Wyncode Week 1 project
